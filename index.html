@@ -1,83 +1,334 @@
 <!DOCTYPE html>
-<!--[if lt IE 8 ]><html class="no-js ie ie7" lang="en"> <![endif]-->
-<!--[if IE 8 ]><html class="no-js ie ie8" lang="en"> <![endif]-->
-<!--[if (gte IE 8)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<html lang="en">
+
 <head>
+  <!--- META --->
+  <!-- meta.j2 -->
+  <title>Emre Hamurcu | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="I am a Computer Engineer with extensive experience in Android application development. In addition to mobile development, I have the capability to build backend APIs when needed. 
 
-   <!--- Basic Page Needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>Emre Hamurcu</title>
-	<meta name="description" content="">
-	<meta name="author" content="">
+Currently, my focus is on cross-platform mobile development for Android and iOS using Kotlin Multiplatform (KMP). I am passionate about building innovative products and contributing throughout the production lifecycle. As a Kotlin developer, I continuously explore emerging technologies to refine my expertise and deliver high-quality software solutions.
+">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="product">
+  <meta property="og:url" content="https://hamurcuabi.github.io">
+  <meta property="og:title" content="Emre Hamurcu | Kotlin Developer | Portfolio">
+  <meta property="og:description" content="I am a Computer Engineer with extensive experience in Android application development. In addition to mobile development, I have the capability to build backend APIs when needed. 
 
-   <!-- Mobile Specific Metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+Currently, my focus is on cross-platform mobile development for Android and iOS using Kotlin Multiplatform (KMP). I am passionate about building innovative products and contributing throughout the production lifecycle. As a Kotlin developer, I continuously explore emerging technologies to refine my expertise and deliver high-quality software solutions.
+">
+  <meta property="og:image" content="./src/images/my-avatar.png">
+  <meta property="og:image:secure_url" content="./src/images/my-avatar.png">
+  <meta property="og:site_name" content="Emre Hamurcu | Kotlin Developer | Portfolio">
+  <meta name="twitter:card" content="photo">
+  <meta name="twitter:creator" content="@hamurcuabi">
+  <meta name="twitter:title" content="Emre Hamurcu | Kotlin Developer | Portfolio">
+  <meta name="twitter:description" content="I am a Computer Engineer with extensive experience in Android application development. In addition to mobile development, I have the capability to build backend APIs when needed. 
 
-	<!-- CSS
-    ================================================== -->
-   <link rel="stylesheet" href="css/default.css">
-	<link rel="stylesheet" href="css/layout.css">
-   <link rel="stylesheet" href="css/media-queries.css">
-   <link rel="stylesheet" href="css/magnific-popup.css">
-
-   <!-- Script
-   ================================================== -->
-	<script src="js/modernizr.js"></script>
-
-   <!-- Favicons
-	================================================== -->
-	<link rel="shortcut icon" href="favicon.png" >
-
+Currently, my focus is on cross-platform mobile development for Android and iOS using Kotlin Multiplatform (KMP). I am passionate about building innovative products and contributing throughout the production lifecycle. As a Kotlin developer, I continuously explore emerging technologies to refine my expertise and deliver high-quality software solutions.
+">
+  <meta name="twitter:image" content="./src/images/my-avatar.png">
+  <meta name="twitter:image:width" content="200">
+  <meta name="twitter:image:height" content="200">
+  <meta name="keywords" content="Emre Hamurcu, Kotlin, Android/IOS, Git" />
+  <link href="https://hamurcuabi.github.io" rel="canonical">
+  <!--- FAVICON -->
+  <link rel="shortcut icon" href="./src/images/logo.ico" type="image/x-icon">
+  <!--- CSS --->
+  <link rel="stylesheet" href="./src/css/style.css">
+  <!--- GOOGLE FONT --->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-   <!-- Header
-   ================================================== -->
-   <header id="home">
-
-      <nav id="nav-wrap">
-
-
-      </nav> <!-- end #nav-wrap -->
-
-      <div class="row banner">
-         <div class="banner-text">
-            <h1 class="responsive-headline">I'm Emre Hamurcu</h1>
-            <h3>I’m a computer engineer with good experience in developing <span>Android </span>applications. If I need I can develop my own backend api as I did before.
-Currently I’m developing Android applications and following software technologies. I always enjoyed developing new products and being in the production stage. </h3>
-            <hr />
-            <ul class="social">
-            
-			   <li><a href="https://www.youtube.com/channel/UCsgjCOoNyeg-9pmFWEN4dZw"><i class="fa fa-youtube"></i></a></li>
-               <li><a href="mailto:emrehamurcu.95@gmail.com"><i class="fa fa-google-plus"></i></a></li>
-               <li><a href="https://www.linkedin.com/in/hamurcu-emre/"><i class="fa fa-linkedin"></i></a></li>
-               <li><a href="https://instagram.com/e.hmrc"><i class="fa fa-instagram"></i></a></li>
-               <li><a href="https://github.com/hamurcuabi/hamurcuabi"><i class="fa fa-github"></i></a></li>
-            </ul>
-         </div>
+  <main>
+    <!--- SIDEBAR-->
+    <!-- sidebar.j2 -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./src/images/my-avatar.png" alt="Emre Hamurcu" width="80">
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Emre Hamurcu">Emre Hamurcu</h1>
+          <p class="title">Kotlin Developer</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
       </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
 
-  
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="#" class="contact-link">emrehamurcu.95@gmail.com</a>
+            </div>
+          </li>
 
-   </header> <!-- Header End -->
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <a href="#" class="contact-link">İstanbul, TR</a>
+            </div>
+          </li>
+
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://x.com/hamurcuabi" class="social-link" , target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/" class="social-link" , target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/hamurcu-emre/" class="social-link" , target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/hamurcuabi" class="social-link" , target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://medium.com/@hamurcuabi" class="social-link" , target="_blank">
+              <ion-icon name="logo-medium"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://www.youtube.com/@emrehamurcu" class="social-link" , target="_blank">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </aside>
+    <div class="main-content">
+      <!-- NAVBAR -->
+      <!-- navbar.j2 -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+        </ul>
+      </nav>
+      <!--- ABOUT -->
+      <!-- about.j2 -->
+      <article class="about  active" data-page="about">
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <!--- PRESENTATION --->
+        <section class="about-text">
+
+
+          <p>I am a Computer Engineer with extensive experience in Android application development. In addition to
+            mobile development, I have the capability to build backend APIs when needed. </p>
 
 
 
-   <!-- Java Script
-   ================================================== -->
-   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-   <script>window.jQuery || document.write('<script src="js/jquery-1.10.2.min.js"><\/script>')</script>
-   <script type="text/javascript" src="js/jquery-migrate-1.2.1.min.js"></script>
 
-   <script src="js/jquery.flexslider.js"></script>
-   <script src="js/waypoints.js"></script>
-   <script src="js/jquery.fittext.js"></script>
-   <script src="js/magnific-popup.js"></script>
-   <script src="js/init.js"></script>
 
+          <p>Currently, my focus is on cross-platform mobile development for Android and iOS using Kotlin Multiplatform
+            (KMP). I am passionate about building innovative products and contributing throughout the production
+            lifecycle. As a Kotlin developer, I continuously explore emerging technologies to refine my expertise and
+            deliver high-quality software solutions.</p>
+
+
+
+
+        </section>
+
+        <!--- DOING -->
+
+        <section class="service">
+          <h3 class="h3 service-title">What i'm doing</h3>
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/images/mobile.svg" alt="design icon" width="30" height="30">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile Apps</h4>
+                <p class="service-item-text">
+                  Professional development of applications for iOS and Android.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/images/youtube.svg" alt="design icon" width="30" height="30">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Youtube</h4>
+                <p class="service-item-text">
+                  Educational videos about Kotlin and mobile development
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/images/medium.svg" alt="design icon" width="30" height="30">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Medium</h4>
+                <p class="service-item-text">
+                  Intuitive and visually appealing user interfaces and user experiences.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./src/images/podcast.svg" alt="design icon" width="30" height="30">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Podcast</h4>
+                <p class="service-item-text">
+                  Small talks about development and coding
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </section>
+
+
+        <!--- SKILLS -->
+
+        <section class="testimonials">
+          <h3 class="h3 testimonials-title">Soft Skills</h3>
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./src/images/bolt.svg" alt="Fast Learner" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Fast Learner</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have the ability to quickly acquire new knowledge and adapt to changing technological
+                    environments.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./src/images/user.svg" alt="Teamwork" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Teamwork</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I collaborate effectively in multidisciplinary projects and communicate clearly with team members.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./src/images/gear.svg" alt="Problem Solving" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Problem Solving</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I am creative and efficient in identifying and solving technical problems.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./src/images/comment.svg" alt="Effective Communication" width="60" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Effective Communication</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    I have the skill to convey ideas clearly and concisely, both technically and non-technically.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            < </ul>
+        </section>
+
+        <!--- popup modal -->
+        <div class="modal-container" data-modal-container>
+          <div class="overlay" data-overlay></div>
+          <section class="testimonials-modal">
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./src/images/avatar-1.png" alt="Emre Hamurcu" width="80" data-modal-img>
+              </figure>
+              <img src="./src/images/icon-quote.svg" alt="quote icon">
+            </div>
+            <div class="modal-content">
+              <h4 class="h3 modal-title" data-modal-title>Emre Hamurcu</h4>
+
+              <div data-modal-text>
+                <p>
+
+                </p>
+              </div>
+            </div>
+          </section>
+        </div>
+
+
+        <!--- TECHNOLOGIES-->
+
+      </article>
+    </div>
+  </main>
+  <!--- JS --->
+  <script src="./src/js/script.js"></script>
+  <!--- IONICONS --->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
